@@ -2,15 +2,13 @@
 
 Welcome to Bankin's Java backend challenge.
 
-You will be adding to the existing code of this project. Setting up the project requires Java 8 and IntelliJ CE (https://www.jetbrains.com/idea/download) with the Scala plugin installed.
+You will be adding to the existing code of this project. Setting up the project requires Java 11 and IntelliJ CE (https://www.jetbrains.com/idea/download).
 
 ## Running the project
 
-The project builds and runs in its initial state. You can start it by either typing `./sbt run` in the console or by creating an SBT run configuration in IntelliJ with the `run` task.
+The project builds and runs in its initial state. You can start it by either typing `./gradlew bootRun` in the console.
 
-Once started, calling the health check endpoint `curl localhost:9000/ping` should return `HTTP 200`.
-
-The command `./sbt test` will run the unit tests.
+The command `./gradlew build` will build the project and run the unit tests.
 
 ## The challenge
 
