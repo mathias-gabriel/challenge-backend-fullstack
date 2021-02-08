@@ -12,4 +12,10 @@ public class Account {
 
     @JsonProperty("balance")
     public Double balance;
+
+    @JsonProperty("type")
+    public String type;
+
+    @JsonProperty("currency_code")
+    public String currencyCode;
 }

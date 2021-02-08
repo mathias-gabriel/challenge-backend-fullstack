@@ -12,7 +12,7 @@ The command `./gradlew build` will build the project and run the unit tests.
 
 ## The challenge
 
-Upon completing the challenge, the endpoint `/mycontroller/myroute` is supposed to return the sum of a user's checking and saving accounts, rounded to the upper hundred.
+Upon completing the challenge, the endpoint `/mycontroller/myroute` is supposed to return all accounts of the user and the sum of a user's checking and saving accounts, rounded to the upper hundred.
 
 The user's credentials as well as its authentication call are already coded in the `BridgeClient` service. 
 

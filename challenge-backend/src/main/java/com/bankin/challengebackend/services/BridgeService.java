@@ -47,7 +47,7 @@ public class BridgeService {
 
     public GetAccountResponse doSomething() throws IOException {
         var authorization = authenticateUser(USER_EMAIL, USER_PASSWORD);
-        return bridgeClient.getAccounts(version, authorization.get().accessToken, "myvalue").execute().body();
+        return bridgeClient.getAccounts(version, "Bearer ", "myvalue").execute().body();
     }
 
 }
