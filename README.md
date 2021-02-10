@@ -8,7 +8,7 @@ This test consists in two major parts:
 
 The frontend exercise implements the endpoint from the backend exercise. **You should therefore start with the backend challenge.**
 
-Each subdirectory (`challenge-backend` et `challenge-front`) contains its own `README.md` that lays out the specifics of its challenge, as well as the expected business rules.
+Each subdirectory (`challenge-backend` and `challenge-front`) contains its own `README.md` that lays out the specifics of its challenge, as well as the expected business rules. Importing each subdirectory as an independant project in your IDE is recommended.
 
 If you are blocked on the backend part of the challenge, you can use a mock of the expected result to proceed with the frontend challenge.
 
