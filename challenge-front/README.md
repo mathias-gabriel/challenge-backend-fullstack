@@ -2,7 +2,7 @@
 
 ## Requirement
 
-To run this project, node 15 or greater is required
+To run this project, nodeJS is required
 
 ## Start the project
 
@@ -18,8 +18,6 @@ All the components **must** be functional. The usage of hooks is highly encourag
 
 ## Todo
 
-- Fetch all accounts from API and replace them in `AccountList` component
-    - When you click on the `view` button (in Account list page) you should redirect to the single account page
-- Create a new page to display a single account
-    - Usage of react-router is expected
-    - This page must be accessible via this path `/accounts/{ACCOUNT_ID}`
+1) Fetch all accounts from API and replace them in `AccountList` component
+   - **The data must be loaded only at component mount**
+2) Move `AccountList` from Homepage into a dedicate route (ex: `/accounts`)

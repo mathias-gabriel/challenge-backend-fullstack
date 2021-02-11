@@ -15,7 +15,6 @@ export default function AccountList() {
             <th>Balance</th>
             <th>Currency</th>
             <th>Type</th>
-            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -25,9 +24,6 @@ export default function AccountList() {
             <td>350.99</td>
             <td>EUR</td>
             <td>checking</td>
-            <td>
-              <a href="">view</a>
-            </td>
           </tr>
           <tr>
             <th>1000002</th>
@@ -35,9 +31,6 @@ export default function AccountList() {
             <td>1200</td>
             <td>EUR</td>
             <td>saving</td>
-            <td>
-              <a href="">view</a>
-            </td>
           </tr>
           <tr>
             <th>1000003</th>
@@ -45,9 +38,6 @@ export default function AccountList() {
             <td>15000</td>
             <td>EUR</td>
             <td>loan</td>
-            <td>
-              <a href="">view</a>
-            </td>
           </tr>
         </tbody>
       </table>
