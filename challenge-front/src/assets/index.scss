@@ -12,6 +12,14 @@ header {
   }
 }
 
-main {
+nav {
   margin: 30px 0;
+
+  a:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+main {
+  margin-bottom: 30px;
 }
