@@ -2,6 +2,8 @@ package com.bankin.challengebackend.controllers;
 
 import java.io.IOException;
 
+import com.bankin.challengebackend.clients.GetAccountResponse;
+import com.bankin.challengebackend.dto.AccountsDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,16 +19,16 @@ import com.bankin.challengebackend.services.BridgeService;
  * The BridgeClient has been injected and ready for use. Maybe the controller, method and route need some renaming?
  */
 @RestController
-@RequestMapping("/mycontroller")
-public class MyController {
+@RequestMapping("/account")
+public class AccountController {
 
     @Autowired
     private BridgeService bridgeService;
 
-    @GetMapping("/myroute")
-    public MyResponse myEndpoint() throws IOException {
-        bridgeService.doSomething();
-        return new MyResponse();
+    @GetMapping("/list")
+    public AccountsDTO getAccounts() throws IOException {
+        GetAccountResponse acounts = bridgeService.doSomething();
+        return AccountsDTO.build(acounts.accounts);
     }
 
 }

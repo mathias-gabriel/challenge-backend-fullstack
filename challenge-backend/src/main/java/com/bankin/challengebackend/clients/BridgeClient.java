@@ -16,8 +16,11 @@ public interface BridgeClient {
                                             @Query("client_id") String clientId,
                                             @Query("client_secret") String clientSecret);
 
-    @GET("/v2/changeme")
+    @GET("/v2/accounts")
     Call<GetAccountResponse> getAccounts(@Header("Bankin-Version") String version,
                                          @Header("Authorization") String authorization,
-                                         @Query("param") String param);
+                                         @Query("client_id") String clientId,
+                                         @Query("client_secret") String clientSecret,
+                                         @Query("limit") Integer limit);
+
 }
